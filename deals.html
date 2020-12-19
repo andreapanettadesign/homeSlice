@@ -70,13 +70,13 @@
 			</select>
 			<br><br>
 			<button class="plus" onclick="button1()"><i class="fas fa-plus"></i></button>
-			<span class="number"> 1 </span>
+			<span id="number"> </span>
 			<button class="minus" onclick="button2()"><i class="fas fa-minus"></i></button>
 			<span style="font-size:20px; margin-left:130px;"><b>Total €22 </b></span>
 			<br><br>
 			<div class="buttonGroup">
-				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
-				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+				<button type="submit" id="favButton" class="favBtn" onclick="snackFunction2()"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn" onclick="snackFunction()"> Add to Basket </button>
 			</div>
 			<br><br>
 		</div>
@@ -142,14 +142,14 @@
 				<option value="diavola"> Fanta Lemon </option>
 			</select>
 			<br><br>
-			<button class="plus"><i class="fas fa-plus"></i></button>
-			<span> 0 </span>
-			<button class="minus"><i class="fas fa-minus"></i></button>
+			<button class="plus" onclick="button1()"><i class="fas fa-plus"></i></button>
+			<span id="number1"> </span>
+			<button class="minus" onclick="button2()"><i class="fas fa-minus"></i></button>
 			<span style="font-size:20px; margin-left:130px;"><b>Total €28 </b></span>
 			<br><br>
 			<div class="buttonGroup">
-				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
-				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+				<button type="submit" id="favButton" class="favBtn" onclick="snackFunction2()"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn" onclick="snackFunction()"> Add to Basket </button>
 			</div>
 			<br><br>
 		</div>
@@ -189,17 +189,19 @@
 				<option value="diavola"> Fanta Lemon </option>
 			</select>
 			<br><br>
-			<button class="plus"><i class="fas fa-plus"></i></button>
-			<span> 0 </span>
-			<button class="minus"><i class="fas fa-minus"></i></button>
+			<button class="plus" onclick="button1()"><i class="fas fa-plus"></i></button>
+			<span id="number2"> </span>
+			<button class="minus" onclick="button2()"><i class="fas fa-minus"></i></button>
 			<span style="font-size:20px; margin-left:130px;"><b>Total €15 </b></span>
 			<br><br>
 			<div class="buttonGroup">
-				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
-				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+				<button type="submit" id="favButton" class="favBtn" onclick="snackFunction2()"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn" onclick="snackFunction()"> Add to Basket </button>
 			</div>
 			<br><br>
 		</div>
+		<div id="snackbar">Item has been added to your Basket! </div>
+		<div id="snackbar2">Item has been added to your Favourites! </div>
 	</body>
 	<script src="js/deals.js"></script>
 </html>

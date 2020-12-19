@@ -9,3 +9,28 @@ function myFunction() {
 }
 
 
+/*Toast Message functionalities */
+function snackFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function snackFunction2() {
+  var x = document.getElementById("snackbar2");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function trashFunction() {
+  var x = document.getElementById("trashbin");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function payFunction() {
+  var x = document.getElementById("payment");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+

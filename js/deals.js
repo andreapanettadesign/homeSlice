@@ -15,7 +15,8 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var x = 1;
+/* Number Increment/Decrement Buttons */
+var x = 0;
 
 document.getElementById("number").innerHTML = x;
 
@@ -27,17 +28,22 @@ function button2() {
 	document.getElementById("number").innerHTML = --x;
 }
 
-/*
-var span = document.getElementsByClassName("number");
-var plus = document.getElementById("plusBtn");
-var minus = document.getElementById("minusBtn");
+document.getElementById("number1").innerHTML = x;
 
-plus.addEventListener('click', function () {
-	span.textContent = x++;
-});
+function button1() {
+	document.getElementById("number1").innerHTML = ++x;
+}
 
-minus.addEventListener('click', function () {
-	span.textContent = x--;
-});*/
+function button2() {
+	document.getElementById("number1").innerHTML = --x;
+}
 
+document.getElementById("number2").innerHTML = x;
 
+function button1() {
+	document.getElementById("number2").innerHTML = ++x;
+}
+
+function button2() {
+	document.getElementById("number2").innerHTML = --x;
+}

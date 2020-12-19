@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/index.css">
 		<script src="js/navBar.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -27,9 +28,9 @@
 			</header>
 			
 			<div class="w3-container" style="float:left">
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p> Originating in Castleknock, HomeSlice makes sure to always deliver the best pizzas, 
+				using only the freshest irish ingredients. Nico DiMario started off pursuing pizza back in
+				his home country of Italy, but now, he want's to bring the same taste of Italy to Ireland.</p>
 				<img src="./images/chefImage.jpeg" alt="Chef" class="chef">
 			</div>
 		</div>
@@ -48,7 +49,7 @@
 				</form>
 			</div>
 			<br>
-			<input type="submit" value="Submit" onclick="myFunction()">
+			<input type="submit" value="Submit" onclick="snackFunction()">
 			<br>
 			<button id="cvButton" class="cvBtn"> Fancy joining the team? </button>
 			
@@ -60,12 +61,14 @@
 						<h3> Interested in joining our team? </h3></br>
 						<p> Upload your CV below and we will get back to you!</p>
 						<input type="file" id="myfile" name="myfile"><br><br>
-						<input type="submit" value="Hire Me" onclick="myFunction()">
-						<div id="toast1">Your CV has been sent to us!</div>
+						<input type="submit" value="Hire Me">
 					</form>
 				</div>
 			</div>
 		</div>
+		
+		<div id="snackbar"> Thank you for your query, we will get back to you shortly! </div>
+		
 	</body>
 	<script src="js/cv.js"></script>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Home Slice...Fresh Pizza, Great Service </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/navBar.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<img src="./images/pizza_logo.png" alt="Home Slice Logo" class="logo">
+		
+		<div class="navBar" id="myNavBar">
+			<a href="index.html"> Home </a>
+			<a href="favourites.html" class="active"> Favourites </a>
+			<a href="basket.html"> Basket </a> 
+			<a href="contact.html"> Contact Us </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		<h2> <u> Your Favourites </u> </h2>
+		<button type="button" class="dealsCollapse"> 
+			The Roma Deal
+			<div class="btnIcon" onclick="myFunction(this)">
+				<i class='fas fa-info-circle' style='font-size:24px'></i>
+			</div>
+		</button> 
+		<div class="content">
+			<div class = "basket2">
+				<ul>
+				  <li>Diavola Pizza</li>
+				  <li>Garlic Bread </li>
+				  <li>Coca Cola</li>
+				  <li>Coca Cola</li>
+				</ul>
+				<span style="font-size:20px; margin-left:40px;"><b>Total €22 </b></span>
+				<br><br>
+				<div class="buttonGroup">
+					<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="dealsCollapse"> 
+			Margherita Pizza
+			<div class="btnIcon">
+				<i class='fas fa-info-circle' style='font-size:24px'></i>
+			</div>
+		</button> 
+		<div class="content">
+			<div class = "basket2">
+				<ul>
+				  <li>Tomato Base</li>
+				  <li>Cheese </li>
+				  <li>Basil</li>
+				</ul>
+				<span style="font-size:20px; margin-left:40px;"><b>Total €10 </b></span>
+				<br><br>
+				<div class="buttonGroup">
+					<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/deals.js"></script>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Home Slice...Fresh Pizza, Great Service </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/navBar.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<img src="./images/pizza_logo.png" alt="Home Slice Logo" class="logo">
+		
+		<div class="navBar" id="myNavBar">
+			<a href="index.html"> Home </a>
+			<a href="favourites.html"> Favourites </a>
+			<a href="basket.html"> Basket </a> 
+			<a href="contact.html" class="active"> Contact Us </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		<div class="w3-card-4" style="width:100%; padding-top:25px">
+			<header class="w3-container w3-deep-orange">
+				<h3>About Us</h3>
+			</header>
+			
+			<div class="w3-container" style="float:left">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<img src="./images/chefImage.jpeg" alt="Chef" class="chef">
+			</div>
+		</div>
+		
+		<div class="w3-card-4" style="width:100%; padding-top:375px; padding-bottom:50px">
+			<header class="w3-container w3-deep-orange">
+				<h3>Contact Us</h3>
+			</header>
+			
+			<div class="contactContainer">
+				<form action="/action_page.php">
+					<input type="text" id="fname" name="fullname" placeholder="Full Name">
+					<input type="email" id="email" name="email" placeholder="Email">
+					<input type="number" id="phonenumber" name="phone" placeholder="Mobile Number">
+					<textarea id="query" name="query" placeholder="Enter your Query.." style="height:100px"></textarea>
+				</form>
+			</div>
+			<br>
+			<input type="submit" value="Submit" onclick="myFunction()">
+			<br>
+			<button id="cvButton" class="cvBtn"> Fancy joining the team? </button>
+			
+			
+			<div id="cvUpload" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<form class="upload">
+						<h3> Interested in joining our team? </h3></br>
+						<p> Upload your CV below and we will get back to you!</p>
+						<input type="file" id="myfile" name="myfile"><br><br>
+						<input type="submit" value="Hire Me" onclick="myFunction()">
+						<div id="toast1">Your CV has been sent to us!</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/cv.js"></script>
+</html>

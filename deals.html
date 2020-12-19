@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Home Slice...Fresh Pizza, Great Service </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="js/navBar.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<img src="./images/pizza_logo.png" alt="Home Slice Logo" class="logo">
+		
+		<div class="navBar" id="myNavBar">
+			<a href="index.html" class="active"> Home </a>
+			<a href="favourites.html"> Favourites </a>
+			<a href="basket.html"> Basket </a> 
+			<a href="contact.html"> Contact Us </a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		<br>
+		<span style="font-size:25px; margin-left:10px; margin-right:180px;"><b><u> Deals </u></b></span> <a style="color= black;" href="menu.html">See Menu</a>
+		<br><br>
+		<button type="button" class="dealsCollapse"> 
+			The Roma Deal
+			<div class="arrowIcon" onclick="myFunction(this)">
+				<i class="fas fa-arrow-circle-left"></i>
+			</div>
+		</button> 
+		<div class="content">
+			<h4><b> Suitable for 2 people...1 Large Pizza, 1 Side and 2 Drinks.</b></h4>
+			<label for="step1"><b> Step 1: Choose your Pizza </b></label><br>
+			<select id="step1" name="pizza1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Margherita </option>
+				<option value="pepperoni"> Pepperoni </option>
+				<option value="hawaiian"> Hawaiian </option>
+				<option value="diavola"> Diavola </option>
+			</select>
+			<br><br>
+			<label for="step2"><b> Step 2: Choose your Side </b></label><br>
+			<select id="step2" name="side1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Potato Wedges </option>
+				<option value="pepperoni"> Nachos </option>
+				<option value="hawaiian"> Garlic Bread </option>
+				<option value="diavola"> Chicken Goujons </option>
+			</select>
+			<br><br>
+			<label for="step3"><b> Step 3: Choose Drink One </b></label><br>
+			<select id="step3" name="drink1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Coca Cola </option>
+				<option value="pepperoni"> Fanta </option>
+				<option value="hawaiian"> Sprite </option>
+				<option value="diavola"> Fanta Lemon </option>
+			</select>
+			<br><br>
+			<label for="step4"><b> Step 4: Choose Drink Two </b></label><br>
+			<select id="step4" name="drink2">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Coca Cola </option>
+				<option value="pepperoni"> Fanta </option>
+				<option value="hawaiian"> Sprite </option>
+				<option value="diavola"> Fanta Lemon </option>
+			</select>
+			<br><br>
+			<button class="plus" onclick="button1()"><i class="fas fa-plus"></i></button>
+			<span class="number"> 1 </span>
+			<button class="minus" onclick="button2()"><i class="fas fa-minus"></i></button>
+			<span style="font-size:20px; margin-left:130px;"><b>Total €22 </b></span>
+			<br><br>
+			<div class="buttonGroup">
+				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+			</div>
+			<br><br>
+		</div>
+		<button type="button" class="dealsCollapse"> 
+			The Florence Deal
+			<div class="arrowIcon">
+				<i class="fas fa-arrow-circle-left"></i>
+			</div>
+		</button> 
+		<div class="content">
+			<p><b> Suitable for 4 people...2 Large Pizzas, 2 Sides and 2 Large Drinks.</b></p>
+			<label for="step1"><b> Step 1: Choose Pizza One </b></label><br>
+			<select id="step1" name="pizza1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Margherita </option>
+				<option value="pepperoni"> Pepperoni </option>
+				<option value="hawaiian"> Hawaiian </option>
+				<option value="diavola"> Diavola </option>
+			</select>
+			<br><br>
+			<label for="step2"><b> Step 2: Choose Pizza Two</b></label><br>
+			<select id="step2" name="pizza2">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Margherita </option>
+				<option value="pepperoni"> Pepperoni </option>
+				<option value="hawaiian"> Hawaiian </option>
+				<option value="diavola"> Diavola </option>
+			</select>
+			<br><br>
+			<label for="step3"><b> Step 3: Choose Side One </b></label><br>
+			<select id="step3" name="side1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Potato Wedges </option>
+				<option value="pepperoni"> Nachos </option>
+				<option value="hawaiian"> Garlic Bread </option>
+				<option value="diavola"> Chicken Goujons </option>
+			</select>
+			<br><br>
+			<label for="step4"><b> Step 4: Choose Side Two </b></label><br>
+			<select id="step4" name="side2">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Potato Wedges </option>
+				<option value="pepperoni"> Nachos </option>
+				<option value="hawaiian"> Garlic Bread </option>
+				<option value="diavola"> Chicken Goujons </option>
+			</select>
+			<br><br>
+			<label for="step5"><b> Step 5: Choose Large Drink One </b></label><br>
+			<select id="step5" name="drink1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Coca Cola </option>
+				<option value="pepperoni"> Fanta </option>
+				<option value="hawaiian"> Sprite </option>
+				<option value="diavola"> Fanta Lemon </option>
+			</select>
+			<br><br>
+			<label for="step6"><b> Step 6: Choose Large Drink Two </b></label><br>
+			<select id="step6" name="drink2">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Coca Cola </option>
+				<option value="pepperoni"> Fanta </option>
+				<option value="hawaiian"> Sprite </option>
+				<option value="diavola"> Fanta Lemon </option>
+			</select>
+			<br><br>
+			<button class="plus"><i class="fas fa-plus"></i></button>
+			<span> 0 </span>
+			<button class="minus"><i class="fas fa-minus"></i></button>
+			<span style="font-size:20px; margin-left:130px;"><b>Total €28 </b></span>
+			<br><br>
+			<div class="buttonGroup">
+				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+			</div>
+			<br><br>
+		</div>
+		
+		<button type="button" class="dealsCollapse"> 
+			The Venice Deal
+			<div class="arrowIcon">
+				<i class="fas fa-arrow-circle-left"></i>
+			</div>
+		</button> 
+		<div class="content">
+			<h4><b> Suitable for 1 person...1 Small Pizza, 1 Side and 1 Drink.</b></h4>
+			<label for="step1"><b> Step 1: Choose your Pizza </b></label><br>
+			<select id="step1" name="pizza1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Margherita </option>
+				<option value="pepperoni"> Pepperoni </option>
+				<option value="hawaiian"> Hawaiian </option>
+				<option value="diavola"> Diavola </option>
+			</select>
+			<br><br>
+			<label for="step2"><b> Step 2: Choose your Side </b></label><br>
+			<select id="step2" name="side1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Potato Wedges </option>
+				<option value="pepperoni"> Nachos </option>
+				<option value="hawaiian"> Garlic Bread </option>
+				<option value="diavola"> Chicken Goujons </option>
+			</select>
+			<br><br>
+			<label for="step3"><b> Step 3: Choose Drink One </b></label><br>
+			<select id="step3" name="drink1">
+				<option value="blank" selected> </option>
+				<option value="margherita"> Coca Cola </option>
+				<option value="pepperoni"> Fanta </option>
+				<option value="hawaiian"> Sprite </option>
+				<option value="diavola"> Fanta Lemon </option>
+			</select>
+			<br><br>
+			<button class="plus"><i class="fas fa-plus"></i></button>
+			<span> 0 </span>
+			<button class="minus"><i class="fas fa-minus"></i></button>
+			<span style="font-size:20px; margin-left:130px;"><b>Total €15 </b></span>
+			<br><br>
+			<div class="buttonGroup">
+				<button type="submit" id="favButton" class="favBtn"> Add to Favorites </button>
+				<button type="submit" id="bsktButton" class="bsktBtn"> Add to Basket </button>
+			</div>
+			<br><br>
+		</div>
+	</body>
+	<script src="js/deals.js"></script>
+</html>
